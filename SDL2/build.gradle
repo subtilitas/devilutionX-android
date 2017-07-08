@@ -6,8 +6,7 @@ model {
         buildToolsVersion = '25.0.3'
 
         defaultConfig {
-            minSdkVersion.apiLevel = 13
-            targetSdkVersion.apiLevel = gradle.sdkVersion
+            minSdkVersion.apiLevel = gradle.minSdkVersion
             versionCode = 1
             versionName = '1.0'
         }
@@ -136,7 +135,7 @@ model {
 task(distributeLib, type : Copy) {
     // trigger build library
     dependsOn assemble
-    into '../distribution/SDL2/'
+    into gradle.libDistributionRoot + '/SDL2/'
     from('build/outputs/native/release/lib') {
         into 'lib/'
     }
