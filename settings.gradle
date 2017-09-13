@@ -4,4 +4,5 @@ gradle.ext.libDistributionRoot = '../distribution'
 
 include ':app'
 include ':SDL2'
+include ':SDL2_mixer'
 include ':main'
