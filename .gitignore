@@ -10,6 +10,7 @@
 
 # Compiled libraries
 *.so
+*.a
 
 # Generated files
 bin/
@@ -42,6 +43,7 @@ captures/
 .idea/gradle.xml
 .idea/dictionaries
 .idea/libraries
+.idea/caches
 
 # Keystore files
 *.jks
@@ -56,3 +58,19 @@ google-services.json
 freeline.py
 freeline/
 freeline_project_description.json
+
+.DS_Store
+
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+app/.cxx/
+
